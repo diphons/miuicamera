@@ -27,4 +27,4 @@ vendor/lib64/vendor.qti.hardware.camera.device@2.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
 
 # Device Features
-product/etc/device_features/munch.xml
+product/etc/device_features/alioth.xml

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- MIUI ADD: Adapt_MIUIAdaptFrame-->
 <features>
     <!--whether the device is pad-->
     <bool name="is_pad">false</bool>
@@ -258,10 +257,6 @@
     <integer name="smartcover_smallwindow_top">0</integer>
     <integer name="smartcover_smallwindow_right">1080</integer>
     <integer name="smartcover_smallwindow_bottom">1920</integer>
-    <!-- is support fingerprint tap-->
-    <bool name="is_support_fingerprint_tap">true</bool>
-    <!-- Configuration for GestureShortcutSettings page -->
-    <bool name="config_with_gesture_shortcut_settings">true</bool>
     <!-- fingerprint navigation event name list -->
     <string-array name="fp_nav_event_name_list">
         <item>uinput-fpc</item>
@@ -331,18 +326,9 @@
     <string-array name="camera_adjust_picture_size_cmd_list">
         <!-- camera id 0 set sensor size 48M, camera id 1 set sensor size 20M -->
         <item>com.ludashi:0, add, 8000, 6000, 33,false</item>
-        <item>com.ludashi:1, add, 5184, 3904, 33,false</item>
+        <item>com.ludashi:1, add, 5184, 3880, 33,false</item>
         <!-- camera id 0 set sensor size 48M, camera id 1 set sensor size 20M -->
-        <item>com.antutu:0, ssize, 8000, 6000;1, ssize, 5184, 3904</item>
-        <!-- camera id 1 limit picture-size <= 1920x1080 -->
-        <item>com.tencent.mobileqq:1,limit,1920, 1080</item>
-    </string-array>
-    <string-array name="camera_adjust_picture_size_cmd_list_pro">
-        <!-- camera id 0 set sensor size 64M, camera id 1 set sensor size 20M -->
-        <item>com.ludashi:0, add, 9248, 6944, 33,false</item>
-        <item>com.ludashi:1, add, 5184, 3904, 33,false</item>
-        <!-- camera id 0 set sensor size 64M, camera id 1 set sensor size 20M -->
-        <item>com.antutu:0, ssize, 9248, 6944;1, ssize, 5184, 3904</item>
+        <item>com.antutu:0, ssize, 8000, 6000;1, ssize, 5184, 3880</item>
         <!-- camera id 1 limit picture-size <= 1920x1080 -->
         <item>com.tencent.mobileqq:1,limit,1920, 1080</item>
     </string-array>
@@ -379,42 +365,27 @@
         <item>com.android.midrive</item>
         <item>com.xiaomi.drivemode</item>
         <item>com.miui.smarttravel</item>
-        <item>com.android.soundrecorder</item>
-        <item>com.miui.screenrecorder</item>
     </string-array>
     <!--system data-app path list -->
     <string-array name="system_data_path_list">
         <item>/system/data-app/XMPass/XMPass.apk</item>
-        <item>/system/data-app/MIUIScannerGlobal/MIUIScannerGlobal.apk</item>
+        <item>/system/data-app/MiuiScanner/MiuiScanner.apk</item>
         <item>/system/data-app/GameCenter/GameCenter.apk</item>
-        <item>/system/data-app/MIUIWeatherGlobal/MIUIWeatherGlobal.apk</item>
-        <item>/system/data-app/MIUINotes/MIUINotes.apk</item>
-        <item>/system/data-app/MIUICompassGlobal/MIUICompassGlobal.apk</item>
-        <item>/system/data-app/MIUICalculatorGlobal/MIUICalculatorGlobal.apk</item>
+        <item>/system/data-app/Weather/Weather.apk</item>
+        <item>/system/data-app/Notes/Notes.apk</item>
+        <item>/system/data-app/MiuiCompass/MiuiCompass.apk</item>
+        <item>/system/data-app/Calculator/Calculator.apk</item>
         <item>/system/data-app/Email/Email.apk</item>
         <item>/system/data-app/CleanMaster/CleanMaster.apk</item>
         <item>/system/data-app/MiSupport/MiSupport.apk</item>
-        <item>/system/data-app/MIGalleryLockScreenGlobal/MIGalleryLockScreenGlobal.apk</item>
+        <item>/system/data-app/MiGalleryLockscreen/MiGalleryLockscreen.apk</item>
         <item>/system/data-app/PersonalAssistant/PersonalAssistant.apk</item>
         <item>/system/data-app/MiuiVoip/MiuiVoip.apk</item>
         <item>/system/data-app/YellowPage/YellowPage.apk</item>
-        <item>/system/data-app/MIDrop/MIDrop.apk</item>
+        <item>/system/data-app/MiDrop/MiDrop.apk</item>
         <item>/system/data-app/MiDrive/MiDrive.apk</item>
         <item>/system/data-app/MiuiDriveMode/MiuiDriveMode.apk</item>
         <item>/system/data-app/SmartTravel/SmartTravel.apk</item>
-        <item>/system/data-app/MIUISoundRecorderTargetSdk30Global/MIUISoundRecorderTargetSdk30Global.apk</item>
-        <item>/system/data-app/MIUIScreenRecorderLiteGlobal/MIUIScreenRecorderLiteGlobal.apk</item>
-    </string-array>
-    <!--global uninstallable system app package list-->
-    <string-array name="global_uninstallable_system_packagename_list">
-        <item>com.xiaomi.scanner</item>
-        <item>com.miui.weather2</item>
-        <item>com.miui.notes</item>
-        <item>com.miui.compass</item>
-        <item>com.miui.calculator</item>
-        <item>com.xiaomi.midrop</item>
-        <item>com.android.soundrecorder</item>
-        <item>com.miui.screenrecorder</item>
     </string-array>
     <!--whether surpport paper mode animation-->
     <bool name="support_papermode_animation">true</bool>
@@ -473,9 +444,6 @@
     <!-- whether support display gamemode -->
     <bool name="support_displayfeature_gamemode">true</bool>
     <!-- whether support fps change -->
-    <bool name="support_smart_fps">true</bool>
-    <!-- smart fps value-->
-    <integer name="smart_fps_value">120</integer>
     <integer-array name="fpsList">
         <item>120</item>
         <item>60</item>
@@ -495,10 +463,6 @@
     <string-array name="support_face_unlock_region_dom">
         <item>CN</item>
     </string-array>
-    <!--These region support face unlock-->
-    <string-array name="support_face_unlock_region_global">
-        <item>ALL</item>
-    </string-array>
     <!-- whether support multi face input -->
     <bool name="support_multi_face_input">true</bool>
     <bool name="support_multi_face_input_global">true</bool>
@@ -513,9 +477,9 @@
     <!-- whether support dc backlight -->
     <bool name="support_dc_backlight">false</bool>
     <!-- whether support secret dc backlight -->
-    <bool name="support_secret_dc_backlight">false</bool>
+    <bool name="support_secret_dc_backlight">true</bool>
     <!-- whether support backlight bit switch -->
-    <bool name="support_backlight_bit_switch">false</bool>
+    <bool name="support_backlight_bit_switch">true</bool>
     <!-- whether support display expert mode -->
     <bool name="support_display_expert_mode">true</bool>
     <!-- display expert mode color gamut default -->
@@ -561,9 +525,9 @@
     <!-- display expert mode gamma max -->
     <integer name="expert_gamma_max">270</integer>
     <!-- device head sar value -->
-    <float name="device_head_sar">0.840</float>
+    <float name="device_head_sar">1.037</float>
     <!-- device body sar value -->
-    <float name="device_body_sar">0.812</float>
+    <float name="device_body_sar">0.718</float>
     <!-- whether support video box display effect -->
     <bool name="support_videobox_display_effect">true</bool>
     <!-- support video toolbox -->
@@ -584,10 +548,6 @@
     <bool name="support_sound_assist">true</bool>
     <!-- Whether support sunlight mode -->
     <bool name="config_sunlight_mode_available">true</bool>
-    <!-- whether support expert primary -->
-    <bool name="need_remove_expert_primary">true</bool>
-    <!-- whether support expert bright -->
-    <bool name="need_remove_expert_bright">true</bool>
 
     <!-- EdgeSettings Adjust settings -->
     <integer-array name="edge_suppresson_condition">
@@ -644,13 +604,7 @@
     <bool name="remove_vgpaper">true</bool>
     <!-- gamebooster game gunsight -->
     <bool name="support_game_gunsight">true</bool>
-    <!-- open game dim featrue -->
-    <bool name="support_game_dim">true</bool>
-    <!-- open dim time form cloud featrue -->
-    <bool name="support_cloud_dim">true</bool>
 
-    <!--  system firware related settings from bsp-adapt  -->
-    <!--  these items are used by SecurityCenter  -->
     <string-array name="dynamic_partition_list">
         <item>/system</item>
         <item>/system_ext</item>
@@ -669,4 +623,3 @@
     </string-array>
     <string name="partition_name_path">/dev/block/by-name/</string>
 </features>
-<!-- END Adapt_MIUIAdaptFrame-->

@@ -6,7 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/miuicamera
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/miuicamera/proprietary/product/etc/device_features/munch.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/munch.xml \
+    vendor/xiaomi/miuicamera/proprietary/product/etc/device_features/alioth.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/alioth.xml \
     vendor/xiaomi/miuicamera/proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_algoup_jni.xiaomi.so \
     vendor/xiaomi/miuicamera/proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_mianode_jni.xiaomi.so \
     vendor/xiaomi/miuicamera/proprietary/system/lib64/libmicampostproc_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmicampostproc_client.so \
